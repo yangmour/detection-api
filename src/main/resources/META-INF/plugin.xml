@@ -15,4 +15,10 @@
     <applicationListeners>
         <listener class="com.github.yangmour.detectionapi.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
     </applicationListeners>
+    <actions>
+        <action id="com.github.yangmour.detectionapi.demo.action.ShowHelloAction01"
+                class="com.github.yangmour.detectionapi.demo.ShowHelloAction01" text="测试一下Function">
+            <add-to-group group-id="HelpMenu" anchor="after" relative-to-action="About"/>
+        </action>
+    </actions>
 </idea-plugin>
